@@ -1,5 +1,10 @@
   <svg xmlns="http://www.w3.org/2000/svg" class="svg-calendar-skeleton-loading-2" viewBox="0 0 364.71 153.87">
       <defs>
+        <style>
+          .month-title, .month {
+            fill: url(#pattern1);
+          }
+        </style>
         <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="0%">
           <stop offset="0%" style="stop-color:#d6d6d6;stop-opacity:1"></stop>
           <stop offset="10%" style="stop-color:#bfbfbf;stop-opacity:1"></stop>
