@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>flashy-radio</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+  <script src='flashy-radio.js'></script>
+
+  <style>
+    body {
+      width: 100vw;
+      height: 100vh;
+    }
+
+    body > div:first-child {
+      border: 1px red solid;
+    }
+
+    body > div:nth-child(2) {
+      margin-top: 15px;
+      border: 1px blue solid;
+    }
+  </style>
+</head>
+<body>
+  <!-- Gotta use divs, because most browsers are dumb, and fieldset is a replaced element -->
+  <!-- https://stackoverflow.com/questions/28078681/why-cant-fieldset-be-flex-containers -->
+  <flashy-radio-group class="flashy-radio">
+    <input type="radio" value="value1" name="group1" id="horiz-1">
+    <label for="horiz-1">Horizontal radio 1</label>
+    <input type="radio" value="value2" checked="true" name="group1" id="horiz-2">
+    <label for="horiz-2">Horizontal radio 2</label>
+    <input type="radio" value="value2" name="group1" id="horiz-3">
+    <label for="horiz-3">Horizontal radio 3</label>
+    <input type="radio" value="value2" name="group1" id="horiz-4">
+    <label for="horiz-4">Horizontal radio 4 that has waaaaaay to much text</label>
+    <input type="radio" value="value2" name="group1" id="horiz-5">
+    <label for="horiz-5">Horizontal radio 5</label>
+    <input type="radio" value="value2" name="group1" id="horiz-6">
+    <label for="horiz-6">Horizontal radio 6</label>
+  </flashy-radio-group>
+
+  <flashy-radio-group class="flashy-radio" vertical>
+    <input type="radio" value="value1" name="group2" id="vert-1">
+    <label for="vert-1">Vertical radio 1</label>
+    <input type="radio" value="value2" name="group2" id="vert-2">
+    <label for="vert-2">Vertical radio 2</label>
+    <input type="radio" value="value2" name="group2" id="vert-3">
+    <label for="vert-3">Vertical radio 3</label>
+  </flashy-radio-group>
+</body>
+</html>

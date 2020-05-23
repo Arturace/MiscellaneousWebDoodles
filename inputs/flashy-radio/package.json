@@ -1,0 +1,18 @@
+{
+  "name": "flashy-radio",
+  "version": "0.1.0",
+  "description": "Some flashy radio button container",
+  "main": "flashy-radio.js",
+  "scripts": {
+    "scss": "node-sass scss/main.scss -o ./"
+    , "scss-w": "node-sass -w scss/main.scss -o ./"
+  },
+  "keywords": [
+    "radiobutton"
+  ],
+  "author": "Artur Madjidov",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
